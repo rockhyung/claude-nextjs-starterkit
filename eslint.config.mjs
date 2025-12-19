@@ -12,7 +12,16 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "node_modules/**",
   ]),
+  // Custom rules
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "error",
+      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "react/react-in-jsx-scope": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;
