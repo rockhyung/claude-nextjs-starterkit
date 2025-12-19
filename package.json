@@ -1,17 +1,35 @@
 {
-  "name": "temp",
-  "version": "0.1.0",
+  "name": "claude-nextjs-starterkit",
+  "version": "1.0.0",
+  "description": "Next.js 15 기반 엔터프라이즈급 웹 개발 starter kit",
+  "author": "Your Name",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write \"**/*.{ts,tsx,json,css,md}\"",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.561.0",
     "next": "16.0.10",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.6.14",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "react-hook-form": "^7.68.0",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^4.2.1",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
